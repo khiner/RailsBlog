@@ -21,6 +21,9 @@ $ sqlite3 --version
 
 After that ...
 ```
-$ rails new blog
+$ rails new blog --skip-git
+$ cd blog
 ```
 ... and so on, following the guide.
+
+Actually, since the `--skip-git` option doesn't just skip `git init`, but also skips adding a `.gitignore`, I first ran `rails new blog` without `--skip-git`, then copied the generated `.gitignore`, then deleted and re-ran `rails new blog --skip-git` and moved the `.gitignore` into the `blog` project dir.
